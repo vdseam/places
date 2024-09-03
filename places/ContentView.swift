@@ -8,14 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var viewModel = LocationViewModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView {
+            List(viewModel.locations) { location in
+                VStack(alignment: .leading) {
+                    Text(location.name ?? "Unknown")
+                        .font(.headline)
+                    
+                    Text("Latitude: \(location.lat), Longitude: \(location.long)")
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
+                }
+            }
+            .navigationTitle("Locations")
+            .onAppear {
+                viewModel.fetchLocations()
+            }
         }
-        .padding()
     }
 }
 
