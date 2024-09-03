@@ -16,14 +16,11 @@ class LocationViewModel: ObservableObject {
     }
     
     func fetchLocations() {
-        repository.fetchLocations { [weak self] result in
-            DispatchQueue.main.async {
-                switch result {
-                case .success(let locations):
-                    self?.locations = locations
-                case .failure(let error):
-                    print("Failed to fetch locations: \(error.localizedDescription)")
-                }
+        Task {
+            do {
+                self.locations = try await repository.fetchLocations()
+            } catch {
+                print("Failed to fetch locations: \(error.localizedDescription)")
             }
         }
     }

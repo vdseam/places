@@ -21,12 +21,21 @@ struct AddLocationView: View {
                 Section {
                     TextField("Name", text: $name)
                         .focused($isNameFieldFocused)
+                        .accessibilityLabel("Name")
+                        .accessibilityHint("Enter the name of the location")
+                        .accessibilityValue(name)
                     
                     TextField("Latitude", text: $latitude)
                         .keyboardType(.decimalPad)
+                        .accessibilityLabel("Latitude")
+                        .accessibilityHint("Enter the latitude of the location")
+                        .accessibilityValue(latitude)
                     
                     TextField("Longitude", text: $longitude)
                         .keyboardType(.decimalPad)
+                        .accessibilityLabel("Longitude")
+                        .accessibilityHint("Enter the longitude of the location")
+                        .accessibilityValue(longitude)
                 }
             }
             .navigationTitle("Location")
@@ -47,6 +56,9 @@ struct AddLocationView: View {
                         }
                     }
                     .disabled(latitude.isEmpty || longitude.isEmpty)
+                    .accessibilityLabel("Submit Button")
+                    .accessibilityHint("Submit the new location details")
+                    .accessibilityAddTraits(.isButton)
                 }
             }
             .onAppear {

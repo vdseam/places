@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D83136A82C8795F800BF817E /* placesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83136A72C8795F800BF817E /* placesApp.swift */; };
-		D83136AA2C8795F800BF817E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83136A92C8795F800BF817E /* ContentView.swift */; };
+		D83136AA2C8795F800BF817E /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83136A92C8795F800BF817E /* LocationsView.swift */; };
 		D83136AC2C8795F900BF817E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D83136AB2C8795F900BF817E /* Assets.xcassets */; };
 		D83136AF2C8795F900BF817E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D83136AE2C8795F900BF817E /* Preview Assets.xcassets */; };
 		D83136B92C8795F900BF817E /* placesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83136B82C8795F900BF817E /* placesTests.swift */; };
@@ -42,7 +42,7 @@
 /* Begin PBXFileReference section */
 		D83136A42C8795F800BF817E /* places.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = places.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D83136A72C8795F800BF817E /* placesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = placesApp.swift; sourceTree = "<group>"; };
-		D83136A92C8795F800BF817E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D83136A92C8795F800BF817E /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
 		D83136AB2C8795F900BF817E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D83136AE2C8795F900BF817E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D83136B42C8795F900BF817E /* placesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = placesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,7 +106,6 @@
 		D83136A62C8795F800BF817E /* places */ = {
 			isa = PBXGroup;
 			children = (
-				D83136A92C8795F800BF817E /* ContentView.swift */,
 				D83136EE2C879E0D00BF817E /* Modules */,
 				D83136AB2C8795F900BF817E /* Assets.xcassets */,
 				D83136AD2C8795F900BF817E /* Preview Content */,
@@ -157,6 +156,7 @@
 				D83136DB2C87972C00BF817E /* LocationViewModel.swift */,
 				D83136DD2C87990A00BF817E /* Configuration.swift */,
 				D83136F22C879F3E00BF817E /* AddLocationView.swift */,
+				D83136A92C8795F800BF817E /* LocationsView.swift */,
 			);
 			path = Location;
 			sourceTree = "<group>";
@@ -294,7 +294,7 @@
 				D83136D32C8796B400BF817E /* LocationRepository.swift in Sources */,
 				D83136F12C879E2400BF817E /* LocationsResponse.swift in Sources */,
 				D83136DC2C87972E00BF817E /* LocationViewModel.swift in Sources */,
-				D83136AA2C8795F800BF817E /* ContentView.swift in Sources */,
+				D83136AA2C8795F800BF817E /* LocationsView.swift in Sources */,
 				D83136D72C8796E700BF817E /* Location.swift in Sources */,
 				D83136F32C879F4100BF817E /* AddLocationView.swift in Sources */,
 				D83136DE2C87991300BF817E /* Configuration.swift in Sources */,

@@ -7,36 +7,18 @@
 
 import Foundation
 
-
-
 protocol LocationRepositoryProtocol {
-    func fetchLocations(completion: @escaping (Result<[Location], Error>) -> Void)
+    func fetchLocations() async throws -> [Location]
 }
 
 class LocationRepository: LocationRepositoryProtocol {
-    func fetchLocations(completion: @escaping (Result<[Location], Error>) -> Void) {
+    func fetchLocations() async throws -> [Location] {
         guard let url = Configuration.shared.getURL(for: "LOCATIONS_URL") else {
-            completion(.failure(NSError(domain: "Invalid URL", code: 0)))
-            return
+            throw URLError(.badURL)
         }
+        let (data, _) = try await URLSession.shared.data(from: url)
         
-        URLSession.shared.dataTask(with: url) { data, response, error in
-            if let error {
-                completion(.failure(error))
-                return
-            }
-            
-            guard let data else {
-                completion(.failure(NSError(domain: "No data", code: 0)))
-                return
-            }
-            
-            do {
-                let locationsResponse = try JSONDecoder().decode(LocationsResponse.self, from: data)
-                completion(.success(locationsResponse.locations))
-            } catch {
-                completion(.failure(error))
-            }
-        }.resume()
+        let response = try JSONDecoder().decode(LocationsResponse.self, from: data)
+        return response.locations
     }
 }

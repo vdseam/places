@@ -14,12 +14,24 @@ struct LocationsView: View {
     var body: some View {
         NavigationView {
             List(viewModel.locations) { location in
-                VStack(alignment: .leading) {
-                    Text(location.name ?? "Unknown")
-                        .font(.headline)
-                    Text("Latitude: \(location.lat), Longitude: \(location.long)")
-                        .font(.subheadline)
-                        .foregroundStyle(.secondary)
+                if let url = URL(string: "wikipedia://") {
+                    Link(destination: url) {
+                        VStack(alignment: .leading) {
+                            Text(location.name ?? "Unknown")
+                                .font(.headline)
+                                .accessibilityLabel(location.name ?? "Unknown")
+                                .accessibilityHint("Name of the location")
+                            
+                            Text("Latitude: \(location.lat), Longitude: \(location.long)")
+                                .font(.subheadline)
+                                .accessibilityLabel("Latitude: \(location.lat), Longitude: \(location.long)")
+                                .accessibilityHint("Shows the geographic coordinates")
+                                .foregroundStyle(.secondary)
+                        }
+                        .accessibilityElement(children: .combine)
+                        .accessibilityAddTraits(.isStaticText)
+                    }
+                    .tint(.primary)
                 }
             }
             .navigationTitle("Locations")
