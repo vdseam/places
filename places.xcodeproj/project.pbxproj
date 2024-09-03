@@ -83,6 +83,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D825F6032C87BA28001712FE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D83136AB2C8795F900BF817E /* Assets.xcassets */,
+				D83136AD2C8795F900BF817E /* Preview Content */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D825F6042C87BA47001712FE /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D83136A72C8795F800BF817E /* placesApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D825F6062C87BAB7001712FE /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				D83136DD2C87990A00BF817E /* Configuration.swift */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		D825F6072C87BAF8001712FE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D825F6082C87BB16001712FE /* Model */,
+				D825F6092C87BB1F001712FE /* Repository */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		D825F6082C87BB16001712FE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D83136D62C8796E200BF817E /* Location.swift */,
+				D83136F02C879E2100BF817E /* LocationsResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D825F6092C87BB1F001712FE /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				D83136D22C8796B100BF817E /* LocationRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		D825F60A2C87BB53001712FE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D83136F22C879F3E00BF817E /* AddLocationView.swift */,
+				D83136A92C8795F800BF817E /* LocationsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		D831369B2C8795F800BF817E = {
 			isa = PBXGroup;
 			children = (
@@ -106,10 +166,10 @@
 		D83136A62C8795F800BF817E /* places */ = {
 			isa = PBXGroup;
 			children = (
-				D83136EE2C879E0D00BF817E /* Modules */,
-				D83136AB2C8795F900BF817E /* Assets.xcassets */,
-				D83136AD2C8795F900BF817E /* Preview Content */,
-				D83136A72C8795F800BF817E /* placesApp.swift */,
+				D825F6042C87BA47001712FE /* Application */,
+				D83136EE2C879E0D00BF817E /* Features */,
+				D825F6072C87BAF8001712FE /* Common */,
+				D825F6032C87BA28001712FE /* Resources */,
 			);
 			path = places;
 			sourceTree = "<group>";
@@ -139,24 +199,20 @@
 			path = placesUITests;
 			sourceTree = "<group>";
 		};
-		D83136EE2C879E0D00BF817E /* Modules */ = {
+		D83136EE2C879E0D00BF817E /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				D825F6062C87BAB7001712FE /* Environment */,
 				D83136EF2C879E1700BF817E /* Location */,
 			);
-			path = Modules;
+			path = Features;
 			sourceTree = "<group>";
 		};
 		D83136EF2C879E1700BF817E /* Location */ = {
 			isa = PBXGroup;
 			children = (
-				D83136D62C8796E200BF817E /* Location.swift */,
-				D83136F02C879E2100BF817E /* LocationsResponse.swift */,
-				D83136D22C8796B100BF817E /* LocationRepository.swift */,
+				D825F60A2C87BB53001712FE /* View */,
 				D83136DB2C87972C00BF817E /* LocationViewModel.swift */,
-				D83136DD2C87990A00BF817E /* Configuration.swift */,
-				D83136F22C879F3E00BF817E /* AddLocationView.swift */,
-				D83136A92C8795F800BF817E /* LocationsView.swift */,
 			);
 			path = Location;
 			sourceTree = "<group>";
@@ -461,7 +517,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"places/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"places/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 4N5Z8SSZ59;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -490,7 +546,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"places/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"places/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 4N5Z8SSZ59;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
