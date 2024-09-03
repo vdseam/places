@@ -27,4 +27,9 @@ class LocationViewModel: ObservableObject {
             }
         }
     }
+    
+    func addLocation(name: String?, lat: Double, long: Double) {
+        let newLocation = Location(name: name, lat: lat, long: long)
+        locations.append(newLocation)
+    }
 }

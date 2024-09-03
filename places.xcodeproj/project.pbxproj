@@ -17,8 +17,9 @@
 		D83136D32C8796B400BF817E /* LocationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83136D22C8796B100BF817E /* LocationRepository.swift */; };
 		D83136D72C8796E700BF817E /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83136D62C8796E200BF817E /* Location.swift */; };
 		D83136DC2C87972E00BF817E /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83136DB2C87972C00BF817E /* LocationViewModel.swift */; };
-		D83136DE2C87991300BF817E /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83136DD2C87990A00BF817E /* Environment.swift */; };
+		D83136DE2C87991300BF817E /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83136DD2C87990A00BF817E /* Configuration.swift */; };
 		D83136F12C879E2400BF817E /* LocationsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83136F02C879E2100BF817E /* LocationsResponse.swift */; };
+		D83136F32C879F4100BF817E /* AddLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83136F22C879F3E00BF817E /* AddLocationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +53,9 @@
 		D83136D22C8796B100BF817E /* LocationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRepository.swift; sourceTree = "<group>"; };
 		D83136D62C8796E200BF817E /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		D83136DB2C87972C00BF817E /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
-		D83136DD2C87990A00BF817E /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		D83136DD2C87990A00BF817E /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		D83136F02C879E2100BF817E /* LocationsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsResponse.swift; sourceTree = "<group>"; };
+		D83136F22C879F3E00BF817E /* AddLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,7 +155,8 @@
 				D83136F02C879E2100BF817E /* LocationsResponse.swift */,
 				D83136D22C8796B100BF817E /* LocationRepository.swift */,
 				D83136DB2C87972C00BF817E /* LocationViewModel.swift */,
-				D83136DD2C87990A00BF817E /* Environment.swift */,
+				D83136DD2C87990A00BF817E /* Configuration.swift */,
+				D83136F22C879F3E00BF817E /* AddLocationView.swift */,
 			);
 			path = Location;
 			sourceTree = "<group>";
@@ -293,7 +296,8 @@
 				D83136DC2C87972E00BF817E /* LocationViewModel.swift in Sources */,
 				D83136AA2C8795F800BF817E /* ContentView.swift in Sources */,
 				D83136D72C8796E700BF817E /* Location.swift in Sources */,
-				D83136DE2C87991300BF817E /* Environment.swift in Sources */,
+				D83136F32C879F4100BF817E /* AddLocationView.swift in Sources */,
+				D83136DE2C87991300BF817E /* Configuration.swift in Sources */,
 				D83136A82C8795F800BF817E /* placesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

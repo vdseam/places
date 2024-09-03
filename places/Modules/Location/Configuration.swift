@@ -1,5 +1,5 @@
 //
-//  Environment.swift
+//  Configuration.swift
 //  places
 //
 //  Created by Vlad Deba on 03/09/2024.
@@ -7,8 +7,8 @@
 
 import Foundation
 
-class Environment {
-    static let shared = Environment()
+class Configuration {
+    static let shared = Configuration()
     
     private init() {}
     

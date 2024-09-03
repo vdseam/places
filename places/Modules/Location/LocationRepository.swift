@@ -15,7 +15,7 @@ protocol LocationRepositoryProtocol {
 
 class LocationRepository: LocationRepositoryProtocol {
     func fetchLocations(completion: @escaping (Result<[Location], Error>) -> Void) {
-        guard let url = Environment.shared.getURL(for: "LOCATIONS_URL") else {
+        guard let url = Configuration.shared.getURL(for: "LOCATIONS_URL") else {
             completion(.failure(NSError(domain: "Invalid URL", code: 0)))
             return
         }
