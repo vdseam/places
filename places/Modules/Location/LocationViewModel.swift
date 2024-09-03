@@ -16,7 +16,7 @@ class LocationViewModel: ObservableObject {
     }
     
     func fetchLocations() {
-        Task {
+        Task { @MainActor in
             do {
                 self.locations = try await repository.fetchLocations()
             } catch {

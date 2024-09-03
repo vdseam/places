@@ -26,13 +26,13 @@ struct AddLocationView: View {
                         .accessibilityValue(name)
                     
                     TextField("Latitude", text: $latitude)
-                        .keyboardType(.decimalPad)
+                        .keyboardType(.numbersAndPunctuation)
                         .accessibilityLabel("Latitude")
                         .accessibilityHint("Enter the latitude of the location")
                         .accessibilityValue(latitude)
                     
                     TextField("Longitude", text: $longitude)
-                        .keyboardType(.decimalPad)
+                        .keyboardType(.numbersAndPunctuation)
                         .accessibilityLabel("Longitude")
                         .accessibilityHint("Enter the longitude of the location")
                         .accessibilityValue(longitude)
@@ -48,14 +48,14 @@ struct AddLocationView: View {
                 }
                 ToolbarItem(placement: .confirmationAction) {
                     Button("Add") {
-                        if let lat = Double(latitude), let long = Double(longitude) {
+                        if let lat = convert(latitude), let long = convert(longitude) {
                             onAdd(name.isEmpty ? nil : name, lat, long)
                             presentationMode.wrappedValue.dismiss()
                         } else {
                             print("Invalid latitude or longitude")
                         }
                     }
-                    .disabled(latitude.isEmpty || longitude.isEmpty)
+                    .disabled(!isValidCoordinate)
                     .accessibilityLabel("Submit Button")
                     .accessibilityHint("Submit the new location details")
                     .accessibilityAddTraits(.isButton)
@@ -65,5 +65,16 @@ struct AddLocationView: View {
                 isNameFieldFocused = true
             }
         }
+    }
+    
+    private var isValidCoordinate: Bool {
+        guard !latitude.isEmpty && !longitude.isEmpty else { return false }
+        guard convert(latitude) != nil && convert(longitude) != nil else { return false }
+        return true
+    }
+    
+    private func convert(_ inputWithComma: String) -> Double? {
+        let inputWithDot = inputWithComma.replacingOccurrences(of: ",", with: ".")
+        return Double(inputWithDot)
     }
 }
