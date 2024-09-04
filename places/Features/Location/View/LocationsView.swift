@@ -14,7 +14,7 @@ struct LocationsView: View {
     var body: some View {
         NavigationView {
             List(viewModel.locations) { location in
-                if let url = URL(string: "wikipedia://") {
+                if let url = URL(string: "wikipedia://places?lat=\(location.lat)&long=\(location.long)") {
                     Link(destination: url) {
                         VStack(alignment: .leading) {
                             Text(location.name ?? "Unknown")

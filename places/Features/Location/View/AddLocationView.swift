@@ -9,17 +9,17 @@ import SwiftUI
 
 struct AddLocationView: View {
     @Environment(\.presentationMode) var presentationMode
-    @State private var name: String = ""
-    @State private var latitude: String = ""
-    @State private var longitude: String = ""
+    @State private var name = String()
+    @State private var latitude = String()
+    @State private var longitude = String()
     @FocusState private var isNameFieldFocused: Bool
     var onAdd: (String?, Double, Double) -> Void
     
     var body: some View {
         NavigationView {
             Form {
-                Section {
-                    TextField("Name", text: $name)
+                Section(footer: Text("The numbers range from -90 to 90 for latitude and -180 to 180 for longitude.")) {
+                    TextField("Name (Optional)", text: $name)
                         .focused($isNameFieldFocused)
                         .accessibilityLabel("Name")
                         .accessibilityHint("Enter the name of the location")
@@ -68,13 +68,31 @@ struct AddLocationView: View {
     }
     
     private var isValidCoordinate: Bool {
-        guard !latitude.isEmpty && !longitude.isEmpty else { return false }
-        guard convert(latitude) != nil && convert(longitude) != nil else { return false }
+        guard !latitude.isEmpty && !longitude.isEmpty else {
+            print("Latitude or longitude is empty")
+            return false
+        }
+        guard let latitude = convert(latitude),
+              let longitude = convert(longitude) else {
+            print("Failed to convert string to double")
+            return false
+        }
+        guard (-90...90).contains(latitude),
+              (-180...180).contains(longitude) else {
+            print("Input value is out of range")
+            return false
+        }
         return true
     }
     
     private func convert(_ inputWithComma: String) -> Double? {
         let inputWithDot = inputWithComma.replacingOccurrences(of: ",", with: ".")
         return Double(inputWithDot)
+    }
+}
+
+#Preview {
+    AddLocationView { name, latitude, longitude in
+        print(name, latitude, longitude)
     }
 }
