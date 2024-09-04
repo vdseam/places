@@ -9,6 +9,8 @@ import SwiftUI
 
 class LocationViewModel: ObservableObject {
     @Published var locations: [Location] = []
+    @Published var isLoading = false
+    
     private let repository: LocationRepositoryProtocol
     private let deepLink = DeepLink(baseURL: "wikipedia://places")
     
@@ -17,7 +19,11 @@ class LocationViewModel: ObservableObject {
     }
     
     func fetchLocations() {
+        isLoading = true
+        
         Task { @MainActor in
+            defer { isLoading = false }
+            
             do {
                 self.locations = try await repository.fetchLocations()
             } catch {

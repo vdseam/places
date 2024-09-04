@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct AddLocationView: View {
-    @Environment(\.presentationMode) var presentationMode
     @State private var name = String()
     @State private var latitude = String()
     @State private var longitude = String()
+    
+    @Environment(\.presentationMode) var presentationMode
     @FocusState private var isNameFieldFocused: Bool
     var onAdd: (String?, Double, Double) -> Void
     
