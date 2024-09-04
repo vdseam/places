@@ -10,6 +10,7 @@ import SwiftUI
 class LocationViewModel: ObservableObject {
     @Published var locations: [Location] = []
     private let repository: LocationRepositoryProtocol
+    private let deepLink = DeepLink(baseURL: "wikipedia://places")
     
     init(repository: LocationRepositoryProtocol = LocationRepository()) {
         self.repository = repository
@@ -28,5 +29,9 @@ class LocationViewModel: ObservableObject {
     func addLocation(name: String?, lat: Double, long: Double) {
         let newLocation = Location(name: name, lat: lat, long: long)
         locations.append(newLocation)
+    }
+    
+    func url(for location: Location) -> URL? {
+        deepLink.generate(for: location)
     }
 }

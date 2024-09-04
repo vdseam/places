@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D825F60D2C87DB68001712FE /* DeepLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = D825F60C2C87DB66001712FE /* DeepLink.swift */; };
 		D83136A82C8795F800BF817E /* placesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83136A72C8795F800BF817E /* placesApp.swift */; };
 		D83136AA2C8795F800BF817E /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83136A92C8795F800BF817E /* LocationsView.swift */; };
 		D83136AC2C8795F900BF817E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D83136AB2C8795F900BF817E /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D825F60C2C87DB66001712FE /* DeepLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLink.swift; sourceTree = "<group>"; };
 		D83136A42C8795F800BF817E /* places.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = places.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D83136A72C8795F800BF817E /* placesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = placesApp.swift; sourceTree = "<group>"; };
 		D83136A92C8795F800BF817E /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 		D825F60B2C87D5F5001712FE /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				D825F60C2C87DB66001712FE /* DeepLink.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 				D83136AA2C8795F800BF817E /* LocationsView.swift in Sources */,
 				D83136D72C8796E700BF817E /* Location.swift in Sources */,
 				D83136F32C879F4100BF817E /* AddLocationView.swift in Sources */,
+				D825F60D2C87DB68001712FE /* DeepLink.swift in Sources */,
 				D83136DE2C87991300BF817E /* Configuration.swift in Sources */,
 				D83136A82C8795F800BF817E /* placesApp.swift in Sources */,
 			);
