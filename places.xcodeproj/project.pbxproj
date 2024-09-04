@@ -8,13 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		D825F60D2C87DB68001712FE /* DeepLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = D825F60C2C87DB66001712FE /* DeepLink.swift */; };
+		D825F6152C87DED5001712FE /* DeepLinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D825F6142C87DED5001712FE /* DeepLinkTests.swift */; };
 		D83136A82C8795F800BF817E /* placesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83136A72C8795F800BF817E /* placesApp.swift */; };
 		D83136AA2C8795F800BF817E /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83136A92C8795F800BF817E /* LocationsView.swift */; };
 		D83136AC2C8795F900BF817E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D83136AB2C8795F900BF817E /* Assets.xcassets */; };
 		D83136AF2C8795F900BF817E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D83136AE2C8795F900BF817E /* Preview Assets.xcassets */; };
-		D83136B92C8795F900BF817E /* placesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83136B82C8795F900BF817E /* placesTests.swift */; };
-		D83136C32C8795F900BF817E /* placesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83136C22C8795F900BF817E /* placesUITests.swift */; };
-		D83136C52C8795F900BF817E /* placesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83136C42C8795F900BF817E /* placesUITestsLaunchTests.swift */; };
 		D83136D32C8796B400BF817E /* LocationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83136D22C8796B100BF817E /* LocationRepository.swift */; };
 		D83136D72C8796E700BF817E /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83136D62C8796E200BF817E /* Location.swift */; };
 		D83136DC2C87972E00BF817E /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83136DB2C87972C00BF817E /* LocationViewModel.swift */; };
@@ -24,6 +22,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		D825F6162C87DED5001712FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D831369C2C8795F800BF817E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D83136A32C8795F800BF817E;
+			remoteInfo = places;
+		};
 		D83136B52C8795F900BF817E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D831369C2C8795F800BF817E /* Project object */;
@@ -42,16 +47,15 @@
 
 /* Begin PBXFileReference section */
 		D825F60C2C87DB66001712FE /* DeepLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLink.swift; sourceTree = "<group>"; };
+		D825F6122C87DED5001712FE /* DeepLinkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeepLinkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D825F6142C87DED5001712FE /* DeepLinkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkTests.swift; sourceTree = "<group>"; };
 		D83136A42C8795F800BF817E /* places.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = places.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D83136A72C8795F800BF817E /* placesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = placesApp.swift; sourceTree = "<group>"; };
 		D83136A92C8795F800BF817E /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
 		D83136AB2C8795F900BF817E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D83136AE2C8795F900BF817E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D83136B42C8795F900BF817E /* placesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = placesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D83136B82C8795F900BF817E /* placesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = placesTests.swift; sourceTree = "<group>"; };
 		D83136BE2C8795F900BF817E /* placesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = placesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D83136C22C8795F900BF817E /* placesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = placesUITests.swift; sourceTree = "<group>"; };
-		D83136C42C8795F900BF817E /* placesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = placesUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D83136D22C8796B100BF817E /* LocationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRepository.swift; sourceTree = "<group>"; };
 		D83136D62C8796E200BF817E /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		D83136DB2C87972C00BF817E /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
@@ -61,6 +65,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D825F60F2C87DED5001712FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D83136A12C8795F800BF817E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -154,12 +165,19 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		D825F6132C87DED5001712FE /* DeepLinkTests */ = {
+			isa = PBXGroup;
+			children = (
+				D825F6142C87DED5001712FE /* DeepLinkTests.swift */,
+			);
+			path = DeepLinkTests;
+			sourceTree = "<group>";
+		};
 		D831369B2C8795F800BF817E = {
 			isa = PBXGroup;
 			children = (
 				D83136A62C8795F800BF817E /* places */,
-				D83136B72C8795F900BF817E /* placesTests */,
-				D83136C12C8795F900BF817E /* placesUITests */,
+				D825F6132C87DED5001712FE /* DeepLinkTests */,
 				D83136A52C8795F800BF817E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -170,6 +188,7 @@
 				D83136A42C8795F800BF817E /* places.app */,
 				D83136B42C8795F900BF817E /* placesTests.xctest */,
 				D83136BE2C8795F900BF817E /* placesUITests.xctest */,
+				D825F6122C87DED5001712FE /* DeepLinkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -193,23 +212,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		D83136B72C8795F900BF817E /* placesTests */ = {
-			isa = PBXGroup;
-			children = (
-				D83136B82C8795F900BF817E /* placesTests.swift */,
-			);
-			path = placesTests;
-			sourceTree = "<group>";
-		};
-		D83136C12C8795F900BF817E /* placesUITests */ = {
-			isa = PBXGroup;
-			children = (
-				D83136C22C8795F900BF817E /* placesUITests.swift */,
-				D83136C42C8795F900BF817E /* placesUITestsLaunchTests.swift */,
-			);
-			path = placesUITests;
-			sourceTree = "<group>";
-		};
 		D83136EE2C879E0D00BF817E /* Features */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,6 +233,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D825F6112C87DED5001712FE /* DeepLinkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D825F6182C87DED5001712FE /* Build configuration list for PBXNativeTarget "DeepLinkTests" */;
+			buildPhases = (
+				D825F60E2C87DED5001712FE /* Sources */,
+				D825F60F2C87DED5001712FE /* Frameworks */,
+				D825F6102C87DED5001712FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D825F6172C87DED5001712FE /* PBXTargetDependency */,
+			);
+			name = DeepLinkTests;
+			productName = DeepLinkTests;
+			productReference = D825F6122C87DED5001712FE /* DeepLinkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		D83136A32C8795F800BF817E /* places */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D83136C82C8795F900BF817E /* Build configuration list for PBXNativeTarget "places" */;
@@ -294,6 +314,10 @@
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
+					D825F6112C87DED5001712FE = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = D83136A32C8795F800BF817E;
+					};
 					D83136A32C8795F800BF817E = {
 						CreatedOnToolsVersion = 16.0;
 					};
@@ -323,11 +347,19 @@
 				D83136A32C8795F800BF817E /* places */,
 				D83136B32C8795F900BF817E /* placesTests */,
 				D83136BD2C8795F900BF817E /* placesUITests */,
+				D825F6112C87DED5001712FE /* DeepLinkTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D825F6102C87DED5001712FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D83136A22C8795F800BF817E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -354,6 +386,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D825F60E2C87DED5001712FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D825F6152C87DED5001712FE /* DeepLinkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D83136A02C8795F800BF817E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -374,7 +414,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D83136B92C8795F900BF817E /* placesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,14 +421,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D83136C52C8795F900BF817E /* placesUITestsLaunchTests.swift in Sources */,
-				D83136C32C8795F900BF817E /* placesUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		D825F6172C87DED5001712FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D83136A32C8795F800BF817E /* places */;
+			targetProxy = D825F6162C87DED5001712FE /* PBXContainerItemProxy */;
+		};
 		D83136B62C8795F900BF817E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D83136A32C8795F800BF817E /* places */;
@@ -403,6 +445,42 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		D825F6192C87DED5001712FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4N5Z8SSZ59;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vdseam.DeepLinkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/places.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/places";
+			};
+			name = Debug;
+		};
+		D825F61A2C87DED5001712FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4N5Z8SSZ59;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vdseam.DeepLinkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/places.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/places";
+			};
+			name = Release;
+		};
 		D83136C62C8795F900BF817E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -657,6 +735,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D825F6182C87DED5001712FE /* Build configuration list for PBXNativeTarget "DeepLinkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D825F6192C87DED5001712FE /* Debug */,
+				D825F61A2C87DED5001712FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D831369F2C8795F800BF817E /* Build configuration list for PBXProject "places" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

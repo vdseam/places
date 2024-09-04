@@ -9,7 +9,7 @@ import Foundation
 
 struct Location: Codable, Identifiable {
     let id = UUID()
-    let name: String?
+    var name: String?
     let lat: Double
     let long: Double
     

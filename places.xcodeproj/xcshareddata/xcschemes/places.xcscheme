@@ -31,7 +31,7 @@
       shouldAutocreateTestPlan = "YES">
       <Testables>
          <TestableReference
-            skipped = "NO"
+            skipped = "YES"
             parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
@@ -42,13 +42,24 @@
             </BuildableReference>
          </TestableReference>
          <TestableReference
-            skipped = "NO"
+            skipped = "YES"
             parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D83136BD2C8795F900BF817E"
                BuildableName = "placesUITests.xctest"
                BlueprintName = "placesUITests"
+               ReferencedContainer = "container:places.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D825F6112C87DED5001712FE"
+               BuildableName = "DeepLinkTests.xctest"
+               BlueprintName = "DeepLinkTests"
                ReferencedContainer = "container:places.xcodeproj">
             </BuildableReference>
          </TestableReference>
